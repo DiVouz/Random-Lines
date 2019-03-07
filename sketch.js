@@ -14,7 +14,7 @@ function windowResized() {
 }
 
 function draw() {
-	if(frameCount % round(random(1,5)) == 0){
+	if(frameCount % 2 == 0){
 		background(0, 15);
 
 		p[0] = new ranPoint(0);
