@@ -5,8 +5,6 @@ let p = [];
 function setup() {
 	canvas = createCanvas(windowWidth, windowHeight)
 	canvas.class('canvas');
-
-	background(0);
 }
 
 function windowResized() {
@@ -15,8 +13,6 @@ function windowResized() {
 
 function draw() {
 	if(frameCount % 2 == 0){
-		background(0, 15);
-
 		p[0] = new ranPoint(0);
 		p[1] = new ranPoint(1);
 
@@ -25,8 +21,8 @@ function draw() {
 		let d = 5;
 
 		noFill();
-		stroke(200);
-		strokeWeight(2);
+		stroke(0, 255, 0);
+		strokeWeight(15);
 
 		beginShape();
 			curveVertex(p[0].ranX, p[0].ranY);
